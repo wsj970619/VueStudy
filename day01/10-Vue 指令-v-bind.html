@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <!-- v-bind:src   =>   :src -->
+    <img v-bind:src="imgUrl" v-bind:title="msg" alt="">
+    <img :src="imgUrl" :title="msg" alt="">
+    <img :src="imgUrl" :title="msg" alt="">
+  </div>
+
+  <div id="app2">
+    <!-- v-bind:src   =>   :src -->
+    <img v-bind:src="imgUrl" v-bind:title="msg" alt="">
+    <img :src="imgUrl" :title="msg" alt="">
+    <img :src="imgUrl" :title="msg" alt="">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        imgUrl: './imgs/10-02.png',
+        msg: 'hello 波仔'
+      }
+    });
+
+    const app2 = new Vue({
+      el: '#app2',
+      data: {
+        imgUrl: 'imgs/11-01.gif',
+        msg: 'hello 图片'
+      }
+    });
+
+  </script>
+</body>
+</html>

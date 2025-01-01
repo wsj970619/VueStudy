@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <!-- 减少计数按钮 -->
+    <button @click="count--">-</button>
+    <!-- 显示当前计数值 -->
+    <span>{{ count }}</span>
+    <!-- 增加计数按钮，鼠标移出时增加5 -->
+    <button @mouseleave="count = count + 5 ">+</button>
+
+    <!-- 鼠标滑入触发事件，增加计数 -->
+    <button v-on:mouseenter="count = count + 5 ">鼠标滑入触发事件</button> 
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        count: 100
+      }
+    })
+  </script>
+</body>
+</html>

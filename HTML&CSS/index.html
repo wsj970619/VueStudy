@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+</head>
+
+<body>
+    <div class="todo-app">
+        <div class="title">
+            王世杰的Todo App
+        </div>
+        <div class="todo-from">
+            <input class="todo-input" type="text" placeholder="Add a todo" />
+            <div class="todo-button">Add todo</div>
+        </div>
+        <div class="item">
+            <input type="checkbox">
+            <div class="name">吃饭</div>
+            <div class="del">Del</div>
+        </div>
+    </div>
+
+    <style>
+        .item {
+            display: flex;
+            box-sizing: border-box;
+            width: 80%;
+            height: 50px;
+            margin: 8px auto;
+            padding: 16px;
+            border-radius: 20px;
+            box-shadow: #FF4500 0px 8px 20px;
+        }
+        body {
+            background: linear-gradient(to right, #FFD700, #FFA500, #FF4500);
+        }
+
+        .todo-app {
+            width: 98%;
+            height: 500px;
+            padding-top: 30px;/* padding:加内边距 */
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border-radius: 10px; /* 所有四个角的圆角半径都是10px */
+            margin-top: 40px;
+            margin-left: 1%;
+            
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 20px; /* margin：是加外边距 */
+        }
+
+        .todo-from {
+            display: flex;
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+
+        .todo-input {
+            border: 1px solid  #dfe1ef;
+            outline: none;
+            width: 60%;
+            height: 50px;
+            border-radius: 20px 0 0 20px;
+            padding-left: 15px;
+        }
+
+        .todo-button {
+            width: 100px;
+            height: 52px;   
+            border-radius: 0 20px 20px 0;  
+            background: linear-gradient(to right, #FFD700, #FFA500, #FF4500);
+            text-align: center;
+            color: #ffffff;
+            line-height: 52px;
+            cursor: pointer;
+            user-select:none;
+        }
+
+
+    </style>
+
+
+
+
+</body>
+
+</html>
